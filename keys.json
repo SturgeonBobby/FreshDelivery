@@ -1,0 +1,8 @@
+{
+    "amazon_email": "your_amazon_login",
+    "amazon_pw": "your_amazon_password",
+    "from_email": "your_email",
+    "from_password": " your_email_password",
+    "to_emails": ["to_emails"],
+    "to_errorfix": ["to_emails"]
+}
