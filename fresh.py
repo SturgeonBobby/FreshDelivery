@@ -104,14 +104,13 @@ def send_mail(message, subject ='Amazon availabilities',
             to_emails = keys["to_emails"]):    
     
     # Log in to email
-    try:
-        server = smtplib.SMTP('smtp.gmail.com',465)
-    except:
+    if "outlook" in from_email:
         server = smtplib.SMTP('smtp-mail.outlook.com',587)
         server.starttls()
         server.ehlo()
-    finally:
-        server.login(from_email, from_password)
+    else:
+        server = smtplib.SMTP_SSL('smtp.gmail.com',465)
+    server.login(from_email, from_password)
     
     # Compose email    
     text_to_send = 'Subject: {}\n\n{}'.format(subject, message)
