@@ -129,3 +129,6 @@ def main():
         check_availability()
         print(f"Will check again in {time_to_wait} mins.")
         time.sleep(60 * time_to_wait)
+
+
+main()
