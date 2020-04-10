@@ -54,6 +54,18 @@ def check_availability():
         cart.click()
         time.sleep(3)
 
+        # Click collapsed item list
+        item_list = driver.find_element_by_class_name("sc-carts-expand-link")
+        item_list.click()
+
+        # Get cart info
+        item_titles = driver.find_elements_by_class_name("sc-product-title")
+        item_quantities = driver.find_elements_by_css_selector(
+            "button.a-button-text[id^='qs-widget-button']"
+        )
+        for item, quantity in zip(item_titles, item_quantities):
+            cart_info[item.text] = quantity.text
+
         # Click checkout
         driver.implicitly_wait(5)
         checkout = driver.find_element_by_class_name("a-button-input")
