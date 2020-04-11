@@ -13,4 +13,4 @@ This package automatically detects available delivery windows for Amazon Fresh o
     - `to_emails`: Recipient address for the notification. Can be a list of emails
     - `to_errorfix`: Recipient address for when the code didn't run properly
 1. From the top level of the repo, run `python fresh.py`
-1. The program will keep running indefinitely, scanning your shopping cart at random intervals ranging from 10, 15, 20, 25, to 30 mins until interrupted by the keyboard (Control-C). You'll receive an email notification if there is an available delivery windows; if the code ran into an error, you'll receive the full trackback via email. The full history of availability data is stored in `availability_history.txt`
+1. The program will keep running indefinitely, scanning your shopping cart at random intervals ranging from 10, 15, 20, 25, to 30 mins until interrupted by the keyboard (Control-C). You'll receive an email notification if there is an available delivery windows; if the code ran into an error, you'll receive the full trackback via email
