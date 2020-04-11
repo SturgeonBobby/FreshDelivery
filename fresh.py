@@ -71,11 +71,15 @@ def check_availability():
             item_name = item.find_element_by_class_name("sc-product-title").text.lower()
             item_quantity = item.find_element_by_class_name("a-button-text").text
 
+            found_match = False
             for category, sample_items in item_categories.items():
                 for sample_item in sample_items:
                     # Avoid potential misses due to spacing, e.g., "blueberry" vs. "blue berry"
                     if sample_item.replace(" ", "") in item_name.replace(" ", ""):
                         available_items[category].append((sample_item, item_quantity))
+                        found_match = True
+            if not found_match:
+                available_items["other"].append((item_name, item_quantity))
 
         for category, available_items in available_items.items():
             print(category)
