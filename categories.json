@@ -1,0 +1,7 @@
+{
+    "dairy": ["cheese", "soy milk", "whole milk", "yogurt"],
+    "fruits": ["apple", "avocado", "banana", "blueberry", "kiwi", "lime"],
+    "protein": ["beef", "chicken breast", "chicken thigh", "egg", "pork", "salmon", "shrimp", "steak", "tofu"],
+    "spice": ["garlic", "ketchup", "sauce", "salt", "scallion"],
+    "vegies": ["asparagus", "broccoli", "broccolini", "cabbage", "carrot", "cauliflower", "celery", "cucumber", "eggplant", "green bean", "iceberg lettuce", "mushroom", "pepper", "potato", "red onion", "snap pea", "spinach", "tomato", "yellow onion"]
+}
