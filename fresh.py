@@ -97,6 +97,15 @@ def check_availability():
         continue_button.click()
         time.sleep(3)
 
+        try:
+            # Click continue twice while shopping at whole food
+            driver.implicitly_wait(5)
+            continue_button_2 = driver.find_element_by_class_name("a-button-input")
+            continue_button_2.click()
+            time.sleep(3)
+        except:
+            pass
+
         # Get availabilities
         driver.implicitly_wait(5)
         slots = driver.find_elements_by_class_name("ufss-date-select-toggle-container")
