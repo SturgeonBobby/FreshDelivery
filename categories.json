@@ -1,7 +1,10 @@
 {
     "dairy": ["cheese", "soy milk", "whole milk", "yogurt"],
     "fruits": ["apple", "avocado", "banana", "blueberry", "kiwi", "lime","mango","papaya"],
-    "protein": ["beef", "chicken breast", "chicken thigh", "egg", "pork", "salmon", "shrimp", "steak", "tofu","tuna","chicken sausage","ham"],
-    "spice": ["garlic", "ketchup", "scallion"],
-    "vegies": ["asparagus", "broccoli", "broccolini", "cabbage", "carrot", "cauliflower", "celery", "cucumber", "eggplant", "green bean", "iceberg lettuce", "mushroom", "pepper", "potato", "red onion", "snap pea", "spinach", "tomato", "yellow onion","sprouts","snow peas","onion"]
+    "protein": ["beef", "chicken breast", "chicken thigh", "egg", "pork",
+        "salmon", "shrimp", "steak", "tofu","tuna","chicken sausage","ham","gardein","chicken drumstick"],
+    "spice": ["garlic", "ketchup", "scallion","shallot"],
+    "vegies": ["asparagus", "broccoli", "broccolini", "cabbage", "carrot", "cauliflower", "celery", "cucumber", "eggplant", "green bean",
+        "iceberg lettuce", "mushroom", "pepper", "potato", "red onion", "snap pea", "spinach",
+        "tomato", "yellow onion","sprouts","snow peas","onion","sprout"]
 }
